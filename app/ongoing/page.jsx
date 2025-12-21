@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import AnimeCard from '../components/AnimeCard';
 import Pagination from '../components/Pagination';
 import { Api, Config } from '../config';
