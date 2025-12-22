@@ -12,8 +12,6 @@
 
 </div>
 
----
-
 ## 🌸 Tentang Project
 
 **Qrtznime** adalah website streaming anime gratis berbasis **Next.js (App Router)**  
@@ -21,8 +19,6 @@ yang menampilkan anime **ongoing**, **completed**, **jadwal rilis**, **genre**, 
 
 > ⚠️ Website ini **tidak menyimpan file video apa pun di server**.  
 > Semua data dan video berasal dari **API publik Sankavollerei (Samehadaku)**.
-
----
 
 ## ✨ Fitur
 
@@ -34,8 +30,6 @@ yang menampilkan anime **ongoing**, **completed**, **jadwal rilis**, **genre**, 
 - 📱 Responsive (mobile & desktop)
 - ⚡ Fast loading
 
----
-
 ## 🛠️ Teknologi
 
 | Teknologi | Keterangan |
@@ -46,13 +40,9 @@ yang menampilkan anime **ongoing**, **completed**, **jadwal rilis**, **genre**, 
 | 🌐 Sankavollerei API | Sumber data |
 | 📦 Node.js | Runtime |
 
----
-
 ## 📂 Struktur Project
 
 app/ ├─ anime/ ├─ episode/ ├─ genre/ ├─ ongoing/ ├─ completed/ ├─ jadwal/ ├─ components/ └─ config.js
-
----
 
 ## ⚙️ Konfigurasi
 
@@ -70,10 +60,6 @@ Logo
 
 Donate link (DANA / QRIS)
 
-
-
----
-
 🚀 Menjalankan di Lokal
 
 git clone https://github.com/meguminn1/Qrtznime.git
@@ -84,9 +70,6 @@ npm run dev
 Buka:
 
 http://localhost:3000
-
-
----
 
 🌍 Deploy ke Vercel
 
@@ -106,40 +89,25 @@ http://localhost:3000
 ✔️ Framework otomatis terdeteksi (Next.js)
 ✔️ Setiap push ke GitHub → auto deploy
 
-
----
-
 💙 Donate
 
 Jika ingin mendukung pengembangan: 👉 DANA / QRIS
 (Link tersedia di website)
-
-
----
 
 ⚠️ Disclaimer
 
 Qrtznime tidak menyimpan file video apa pun di server.
 Semua konten berasal dari pihak ketiga dan digunakan untuk edukasi.
 
-
----
-
 📜 License
 
 Open Source — bebas dipelajari dan dikembangkan.
-
-
----
 
 👤 Author
 
 GitHub: meguminn1
 
 Project: Qrtznime
-
-
----
 
 ## 3️⃣ Commit & Push
 ```sh
