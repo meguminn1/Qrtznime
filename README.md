@@ -109,7 +109,7 @@ GitHub: meguminn1
 
 Project: Qrtznime
 
-## 3️⃣ Commit & Push
+3️⃣ Commit & Push
 ```sh
 git add README.md
 git commit -m "update README"
