@@ -22,7 +22,8 @@ export const Config = {
       description: "Halaman yang kamu cari sepertinya tidak ada di dimensi ini. Ayo kembali ke jalan yang benar!"
     },
     Footer: {
-      about: "Website ini tidak menyimpan file apa pun di servernya. Semua konten disediakan oleh pihak ketiga yang tidak berafiliasi."
+      about: "© 2025 QrtzNime
+Streaming anime favoritmu dengan cepat,ringan,dan bebas ribet."
     }
   }
 };
