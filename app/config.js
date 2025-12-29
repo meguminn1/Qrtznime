@@ -11,14 +11,14 @@ export const Config = {
   description: "Qrtz adalah situs anime gratis tanpa iklan untuk menonton anime gratis",
 
   // URL untuk logo
-  logo: "https://cihuy.biz.id/file/_xbA5BeZ.png",
+  logo: "https://i.postimg.cc/ZR0bd1KV/38c94986308c70a35409f86d5a588e3a-(1).jpg",
 
   donateLink: "https://wa.me/6285693362451?text=Halo%20saya%20mau%20donate%20via%20DANA",
 
   pages: {
     notFound: {
       title: "Wah, Tersesat di Isekai? 🗺️",
-      logo: "https://cihuy.biz.id/file/_xbA5BeZ.png",
+      logo: "https://i.postimg.cc/ZR0bd1KV/38c94986308c70a35409f86d5a588e3a-(1).jpg",
       description: "Halaman yang kamu cari sepertinya tidak ada di dimensi ini. Ayo kembali ke jalan yang benar!"
     },
     Footer: {
