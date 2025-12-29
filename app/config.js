@@ -13,7 +13,7 @@ export const Config = {
   // URL untuk logo
   logo: "https://cihuy.biz.id/file/_xbA5BeZ.png",
 
-  donateLink: "https://wa.me/6281234567890?text=Halo%20saya%20mau%20donate%20via%20DANA",
+  donateLink: "https://wa.me/6285693362451?text=Halo%20saya%20mau%20donate%20via%20DANA",
 
   pages: {
     notFound: {
