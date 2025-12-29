@@ -22,13 +22,13 @@ const Footer = () => {
           <div className="flex justify-center items-center gap-2 mt-3">
             <span className="text-gray-500">API by</span>
             <a 
-              href="https://sankanime.com/contactcs"
+              href="https://github.com/meguminn1"
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center gap-1 font-semibold text-pink-400 hover:text-pink-300 transition-colors"
             >
               <GitHubIcon className="w-4 h-4" />
-              Sankavollerei
+              Megumin
             </a>
           </div>
         </div>
