@@ -20,6 +20,14 @@ yang menampilkan anime **ongoing**, **completed**, **jadwal rilis**, **genre**, 
 > ⚠️ Website ini **tidak menyimpan file video apa pun di server**.  
 > Semua data dan video berasal dari **API publik Sankavollerei (Samehadaku)**.
 
+## 👀 Preview
+
+<div align="center">
+  <img src="https://i.postimg.cc/NfrBNtwJ/qrtznime.jpg" alt="Qrtznime Preview" width="800"/>
+</div>
+
+[🌐 Live Demo](https://qrtznime.netlify.app)
+
 ## ✨ Fitur
 
 - 🔥 Anime Ongoing & Completed
@@ -40,59 +48,57 @@ yang menampilkan anime **ongoing**, **completed**, **jadwal rilis**, **genre**, 
 | 🌐 Sankavollerei API | Sumber data |
 | 📦 Node.js | Runtime |
 
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=meguminn1&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=meguminn1&theme=dark&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=meguminn1&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
+</div>
+
 ## 📂 Struktur Project
 
 app/ ├─ anime/ ├─ episode/ ├─ genre/ ├─ ongoing/ ├─ completed/ ├─ jadwal/ ├─ components/ └─ config.js
 
-## ⚙️ Konfigurasi
+## ⚙️ Setup & Konfigurasi
 
-File konfigurasi utama:
+### 🔹 Jalankan di Lokal
 ```bash
-app/config.js
-
-Digunakan untuk:
-
-Nama website
-
-Deskripsi
-
-Logo
-
-Donate link (DANA / QRIS)
-
-🚀 Menjalankan di Lokal
-
 git clone https://github.com/meguminn1/Qrtznime.git
 cd Qrtznime
 npm install
 npm run dev
 
-Buka:
+Buka: http://localhost:3000
 
-http://localhost:3000
+🔹 Deploy ke Vercel
 
-🌍 Deploy ke Vercel
-
-1. Login ke https://vercel.com
-
+1. Login ke Vercel
 
 2. Klik New Project
 
-
 3. Import repo Qrtznime
-
 
 4. Klik Deploy
 
+🤝 Contributing
 
+Jika ingin berkontribusi:
 
-✔️ Framework otomatis terdeteksi (Next.js)
-✔️ Setiap push ke GitHub → auto deploy
+1. Fork repo ini
 
-💙 Donate
+2. Buat branch baru (git checkout -b feature/nama-fitur)
 
-Jika ingin mendukung pengembangan: 👉 DANA / QRIS
-(Link tersedia di website)
+3. Commit perubahanmu (git commit -m "Tambah fitur xyz")
+
+4. Push ke branch (git push origin feature/nama-fitur)
+
+5. Buat Pull Request
+
+💙 Support
+
+Jika ingin mendukung pengembangan Qrtznime:
+DANA / QRIS – Link tersedia di website
 
 ⚠️ Disclaimer
 
@@ -106,11 +112,4 @@ Open Source — bebas dipelajari dan dikembangkan.
 👤 Author
 
 GitHub: meguminn1
-
 Project: Qrtznime
-
-3️⃣ Commit & Push
-```sh
-git add README.md
-git commit -m "update README"
-git push
