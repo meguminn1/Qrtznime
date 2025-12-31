@@ -6,128 +6,95 @@
 ![Next JS](https://img.shields.io/badge/Next.js-13+-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-3.x-38BDF8?style=flat-square&logo=tailwindcss)
-![Deploy](https://img.shields.io/badge/Deploy-Vercel-black?style=flat-square&logo=vercel)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=flat-square&logo=vercel)
 
-🚀 Fast • 📱 Responsive • 🎨 Clean UI  
+🚀 **Fast Performance** • 📱 **Fully Responsive** • 🎨 **Modern Minimalist UI**
 
 </div>
 
 ## 🌸 Tentang Project
 
-**Qrtznime** adalah website streaming anime gratis berbasis **Next.js (App Router)** yang menampilkan anime **ongoing**, **completed**, **jadwal rilis**, **genre**, dan **pencarian anime**.
+**Qrtznime** adalah platform streaming anime berbasis web yang dibangun menggunakan **Next.js (App Router)**. Project ini dirancang untuk memberikan pengalaman menonton yang mulus tanpa iklan yang mengganggu, dengan antarmuka yang bersih dan navigasi yang intuitif.
 
-> ⚠️ Website ini **tidak menyimpan file video apa pun di server**.  
-> Semua data dan video berasal dari **API publik Sankavollerei (Samehadaku)**.
+> [!IMPORTANT]
+> **Legal Disclaimer:** Website ini tidak menyimpan file video di server sendiri. Semua konten ditarik secara dinamis dari API publik pihak ketiga untuk tujuan edukasi dan pengembangan portofolio.
 
-## 👀 Preview
-
-<div align="center">
-  <img src="https://i.postimg.cc/NfrBNtwJ/qrtznime.jpg" alt="Qrtznime Preview" width="800"/>
-</div>
+## 👀 Preview & Demo
 
 <div align="center">
-  <h3>
-    <a href="https://qrtznime.netlify.app">🌐 Coba Demo Live (Klik Disini)</a>
-  </h3>
+  <img src="https://i.postimg.cc/NfrBNtwJ/qrtznime.jpg" alt="Qrtznime Preview" width="800" style="border-radius: 10px;"/>
+  <br/>
+  <h3><a href="https://qrtznime.netlify.app">🌐 Jelajahi Live Demo</a></h3>
 </div>
 
-## ✨ Fitur
+## ✨ Fitur Utama (Detail)
 
-- 🔥 Anime Ongoing & Completed
-- 📅 Jadwal rilis anime
-- 🔍 Pencarian anime
-- 🧩 Filter berdasarkan genre
-- 🎥 Video player custom
-- 📱 Responsive (mobile & desktop)
-- ⚡ Fast loading dengan Server Side Rendering (SSR)
+* **⚡ High-Speed Streaming:** Menggunakan optimasi Next.js untuk memastikan perpindahan halaman yang instan.
+* **🔥 Update Real-Time:** Menampilkan daftar anime **Ongoing** (sedang tayang) dan **Completed** (tamat) yang selalu diperbarui secara otomatis dari sumber data.
+* **📅 Schedule System:** Fitur jadwal rilis harian agar pengguna tidak ketinggalan episode terbaru dari anime favorit mereka.
+* **🔍 Advanced Search:** Pencarian cepat berdasarkan judul dengan algoritma filter yang akurat.
+* **🧩 Genre Exploration:** Menjelajahi ribuan judul anime berdasarkan kategori/genre tertentu.
+* **🎬 Integrated Video Player:** Player video yang responsif dan mendukung berbagai kualitas resolusi.
+* **📱 Mobile First Design:** Dioptimalkan secara penuh untuk perangkat Android dan iOS.
 
-## 🛠️ Teknologi
+## ⚙️ Cara Kerja Website
 
-| Teknologi | Keterangan |
-|---------|-----------|
-| ⚛️ Next.js | Framework React (App Router) |
-| ⚡ React | Library UI |
-| 🎨 Tailwind CSS | Styling |
-| 🌐 Samedaku API | Sumber data |
-| 📦 Node.js | Runtime |
+Website ini bekerja dengan arsitektur **Modern Web Scraper & API Integrator**:
 
-## 🧩 Arsitektur Aplikasi
+1.  **Request:** Saat user membuka halaman, Next.js melakukan request ke API Route.
+2.  **Data Fetching:** Server-side code akan mengambil data (scraping/fetching) dari API publik Samehadaku secara asinkron.
+3.  **Processing:** Data mentah diproses dan dibersihkan di sisi server sebelum dikirim ke frontend untuk menjaga keamanan API Key/Endpoint.
+4.  **Rendering:** Menggunakan **Server Side Rendering (SSR)** untuk SEO yang lebih baik dan **Client Side Rendering (CSR)** untuk interaksi player yang cepat.
 
-```mermaid
-graph TD
-    A[User / Client] -->|Buka Website| B[Next.js Frontend]
-    B -->|Request Anime/Episode| C{API Route Handler}
-    C -->|Scrape Data| D[Samedaku / Sumber Data]
-    D -->|Return HTML/JSON| C
-    C -->|Response JSON| B
-    B -->|Render UI & Player| A
-    
-    style B fill:#0070f3,stroke:#fff,stroke-width:2px,color:#fff
-    style C fill:#f59e0b,stroke:#fff,stroke-width:2px,color:#fff
-    style D fill:#10b981,stroke:#fff,stroke-width:2px,color:#fff
+### 🧩 Diagram Alur Data
+<div align="center">
+  <img src="https://quickchart.io/graphviz?format=png&graph=digraph{rankdir=LR;node[shape=box,style=filled,fillcolor=white,fontname=Arial];User->NextJS;NextJS->API;API->Samedaku;Samedaku->API;API->NextJS;NextJS->User;}" alt="Arsitektur Qrtznime" width="600"/>
+</div>
 
-🚀 Roadmap
-Berikut adalah fitur yang sedang dikerjakan atau direncanakan:
- * [x] Basic Streaming (Ongoing & Completed)
- * [x] Pencarian Anime
- * [x] Responsive Mobile UI
- * [ ] 🌙 Dark/Light Mode Toggle
- * [ ] 💾 Simpan History Tontonan (Local Storage)
- * [ ] 💬 Komentar Disqus
-📂 Struktur Project
+## 📂 Struktur Direktori
+
+```bash
 Qrtznime/
 ├── 📁 app/
-│   ├── 📁 anime/       # Halaman detail anime
-│   ├── 📁 episode/     # Halaman streaming/nonton
-│   ├── 📁 genre/       # Filter anime per genre
-│   ├── 📁 ongoing/     # Halaman list ongoing
-│   ├── 📁 completed/   # Halaman list tamat
-│   ├── 📁 jadwal/      # Jadwal rilis
-│   ├── 📁 components/  # Komponen UI (Navbar, Card, dll)
-│   └── ⚙️ config.js    # Konfigurasi global
-├── public/             # Assets statis
-└── package.json
+│   ├── 📁 anime/       # Detail informasi & sinopsis anime
+│   ├── 📁 episode/     # Page khusus video player streaming
+│   ├── 📁 genre/       # Navigasi berdasarkan kategori
+│   ├── 📁 ongoing/     # List anime yang masih berjalan
+│   ├── 📁 completed/   # Arsip anime yang sudah tamat
+│   ├── 📁 jadwal/      # Jadwal rilis per hari
+│   ├── 📁 components/  # Reusable UI (Navbar, Footer, Card, Skeleton)
+│   └── ⚙️ config.js    # Pengaturan Base URL API & Konstanta
+├── 📁 public/          # Ikon, logo, dan gambar statis
+├── tailwind.config.js  # Konfigurasi custom tema & warna
+└── package.json        # Dependensi project
 
-⚙️ Setup & Konfigurasi
-🔹 Jalankan di Lokal
-Ikuti langkah ini untuk menjalankan project di komputer kamu:
-# 1. Clone repository
+🚀 Panduan Instalasi
+🔹 Run Locally
+# Clone project
 git clone [https://github.com/meguminn1/Qrtznime.git](https://github.com/meguminn1/Qrtznime.git)
 
-# 2. Masuk ke folder project
+# Masuk ke folder
 cd Qrtznime
 
-# 3. Install dependencies
+# Install library
 npm install
 
-# 4. Jalankan server development
+# Jalankan mode dev
 npm run dev
 
-Buka browser dan akses: http://localhost:3000
+Akses di: http://localhost:3000
 🔹 Deploy ke Vercel
-Cara termudah untuk online adalah menggunakan Vercel:
- * Login ke Vercel.
- * Klik New Project.
- * Import repository Qrtznime dari GitHub kamu.
- * Klik Deploy.
- * Selesai! Website kamu sudah online.
-🤝 Contributing
-Jika ingin berkontribusi menambah fitur:
- * Fork repo ini.
- * Buat branch baru (git checkout -b feature/nama-fitur).
- * Commit perubahanmu (git commit -m "Tambah fitur xyz").
- * Push ke branch (git push origin feature/nama-fitur).
- * Buat Pull Request di GitHub.
-💙 Support
-Jika ingin mendukung pengembangan Qrtznime:
-DANA / QRIS – Link tersedia di website.
-⚠️ Disclaimer
-Qrtznime tidak menyimpan file video apa pun di server kami.
-Semua konten berasal dari pihak ketiga dan digunakan hanya untuk tujuan edukasi/pembelajaran pemrograman.
-📜 License
-Open Source — bebas dipelajari dan dikembangkan.
+ * Hubungkan akun GitHub ke Vercel.
+ * Pilih repositori Qrtznime.
+ * Klik Deploy (Pengaturan otomatis terdeteksi sebagai Next.js).
+🤝 Kontribusi & Support
+Ingin membantu mengembangkan Qrtznime?
+ * Fork project ini.
+ * Buat fitur baru di branch berbeda.
+ * Kirim Pull Request.
+Dukungan: Jika project ini bermanfaat, berikan ⭐ Star pada repositori ini!
 <div align="center">
-👤 <b>Author</b> 
+👤 <b>Developer: meguminn1</b> 
 
-GitHub: <a href="https://www.google.com/search?q=https://github.com/meguminn1">@meguminn1</a>
+<i>"Build with passion, code with logic."</i>
 </div>
