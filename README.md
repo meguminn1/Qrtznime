@@ -45,7 +45,7 @@ yang menampilkan anime **ongoing**, **completed**, **jadwal rilis**, **genre**, 
 | ⚛️ Next.js | Framework React (App Router) |
 | ⚡ React | Library UI |
 | 🎨 Tailwind CSS | Styling |
-| 🌐 Sankavollerei API | Sumber data |
+| 🌐 Samedaku API | Sumber data |
 | 📦 Node.js | Runtime |
 
 ## 📊 GitHub Analytics
